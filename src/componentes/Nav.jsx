@@ -11,12 +11,12 @@ export default function Nav() {
         </li>
         <li className="nav-item d-none d-sm-inline-block">
           <a href="index3.html" className="nav-link">
-            Home
+            Empresas
           </a>
         </li>
         <li className="nav-item d-none d-sm-inline-block">
           <a href="#" className="nav-link">
-            Contact
+            Contabilidade
           </a>
         </li>
       </ul>

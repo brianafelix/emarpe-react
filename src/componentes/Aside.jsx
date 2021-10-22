@@ -11,7 +11,7 @@ export default function () {
             className="brand-image img-circle elevation-3"
             style={{ opacity: ".8" }}
           />
-          <span className="brand-text font-weight-light">  AdminLTE 3</span>
+          <span className="brand-text font-weight-light"> Empresa</span>
         </a>
 
         <div className="sidebar">
@@ -25,7 +25,7 @@ export default function () {
             </div>
             <div className="info">
               <a href="#" className="d-block">
-                Alexander Pierce
+                EMARPE
               </a>
             </div>
           </div>
@@ -57,7 +57,7 @@ export default function () {
                 <a href="#" className="nav-link active">
                   <i className="nav-icon fas fa-tachometer-alt"></i>
                   <p>
-                    Starter Pages
+                    Parametrizaçao
                     <i className="right fas fa-angle-left"></i>
                   </p>
                 </a>
