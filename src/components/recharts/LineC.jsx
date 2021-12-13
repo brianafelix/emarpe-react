@@ -55,7 +55,7 @@ const bdata = [
 const LineC = () => {
   return (
     <div>
-      <h1 className="chart-heading">RadarChart</h1>
+      <h1 className="chart-heading"></h1>
       <ResponsiveContainer width="100%" aspect={3}>
         <RadialBarChart
           width={730}

@@ -61,7 +61,7 @@ const Login = () => {
                     Facebook
                   </a>
                   <a href="#" class="btn btn-block btn-danger">
-                    <i class="fab fa-google-plus mr-2"></i> Faça login usando
+                    <i class="fab fa-google-plus mr-2.."></i> Faça login usando
                     Google+
                   </a>
                 </div>

@@ -42,7 +42,7 @@ function App() {
           <Nav />
           <Aside />
           <Routes>
-            <Route exact path="/" element={<Home />} />
+            <Route exact path="/home" element={<Home />} />
             <Route exact path="/balancetes" element={<Balancetes />} />
             <Route exact path="/Contabilidades" element={<Contabilidades />} />
             <Route exact path="/parametrizacao" element={<Parametrizacao />} />

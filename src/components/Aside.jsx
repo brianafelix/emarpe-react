@@ -4,7 +4,7 @@ export default function Aside() {
   return (
     <>
       <aside className="main-sidebar sidebar-dark-primary elevation-4">
-        <a href="/" className="brand-link">
+        <a href="home" className="brand-link">
           <span className="brand-text font-weight-light"> EMARPE</span>
         </a>
 
@@ -33,8 +33,9 @@ export default function Aside() {
               data-accordion="false"
             >
               <li className="nav-item menu-open">
-                <a href="#" className="nav-link active">
+                <a href="Home" className="nav-link active">
                   <i className="nav-icon fas fa-tachometer-alt"></i>
+
                   <p>Dashbord</p>
                 </a>
               </li>
@@ -96,14 +97,6 @@ export default function Aside() {
                   <i className="nav-icon bi bi-person-lines-fill"></i>
 
                   <p>Usuario</p>
-                </a>
-              </li>
-
-              <li className="nav-item">
-                <a href="Login" className="nav-link">
-                  <i className="nav-icon bi bi-person-lines-fill"></i>
-
-                  <p>Login</p>
                 </a>
               </li>
 
