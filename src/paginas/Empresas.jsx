@@ -4,7 +4,7 @@ import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 
 import "react-toastify/dist/ReactToastify.css";
-import CardsEmpresa from "../../components/CardsEmpresa";
+import CardsEmpresa from "../components/CardsEmpresa";
 
 export default function Empresas() {
   //criar as referenças
@@ -16,14 +16,14 @@ export default function Empresas() {
   //usestate variaveis
   const [ficheiro, setficheiro] = useState(null);
   const [empresa, setempresa] = useState([]);
-  const [allempresa, setallempresa] = useState([]);
-  const [loading, setloading] = useState("jlk");
+  const [todasEmpresas, settodasEmpresas] = useState([]);
+  const [loading, setloading] = useState("estado0");
 
   useEffect(() => {
     const buscarEmpresa = async () => {
       try {
         const res = await axios.get("empresa/");
-        setallempresa(res.data);
+        settodasEmpresas(res.data);
       } catch (err) {
         console.log(err);
       }
@@ -75,7 +75,7 @@ export default function Empresas() {
           headers: { "Content-Type": "multipart/form-data" },
         });
         successo();
-        setloading("j");
+        setloading("estado1");
       } catch (err) {
         erro();
         console.log(err);
@@ -126,7 +126,7 @@ export default function Empresas() {
               </div>
             </div>
             <div className="row mt-5">
-              {allempresa.map((n) => (
+              {todasEmpresas.map((n) => (
                 <div className="col-md-4">
                   {" "}
                   <CardsEmpresa

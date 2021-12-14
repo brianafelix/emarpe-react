@@ -1,6 +1,23 @@
-import React from "react";
+import { useContext, useRef, useEffect, useState } from "react";
+
+import axios from "axios";
 
 export default function Nav() {
+  const [todasEmpresas, settodasEmpresas] = useState([]);
+  const [loading, setloading] = useState("estado0");
+
+  useEffect(() => {
+    const buscarEmpresa = async () => {
+      try {
+        const res = await axios.get("empresa/");
+        settodasEmpresas(res.data);
+      } catch (err) {
+        console.log(err);
+      }
+    };
+    buscarEmpresa();
+  }, [loading]);
+
   return (
     <nav className="main-header navbar navbar-expand navbar-white navbar-light">
       <ul className="navbar-nav">
@@ -9,27 +26,45 @@ export default function Nav() {
             <i className="fas fa-bars"></i>
           </a>
         </li>
-        <li className="nav-item d-none d-sm-inline-block">
-          <a href="/" className="nav-link">
-            Empresas
-          </a>
+        <li
+          className="nav-item d-none d-sm-inline-block"
+          style={{ marginRight: "3px" }}
+        >
+          <select className="form-control" name="" id="">
+            <option value="">Selecione uma Empresa</option>
+            {todasEmpresas.map((n) => (
+              <option>{n.empresa}</option>
+            ))}
+          </select>
         </li>
-        <li className="nav-item d-none d-sm-inline-block">
-          <a href="#" className="nav-link">
-            Contabilidade
-          </a>
+        <li
+          className="nav-item d-none d-sm-inline-block"
+          style={{ marginRight: "3px" }}
+        >
+          <select className="form-control" name="" id="">
+            <option value="">Selecione o Ano</option>
+            <option>2021</option>
+          </select>
         </li>
-
-        <li className="nav-item d-none d-sm-inline-block">
-          <a href="#" className="nav-link">
-            Mes
-          </a>
-        </li>
-
-        <li className="nav-item d-none d-sm-inline-block">
-          <a href="#" className="nav-link">
-            Ano
-          </a>
+        <li
+          className="nav-item d-none d-sm-inline-block"
+          style={{ marginRight: "3px" }}
+        >
+          <select className="form-control" name="" id="">
+            <option value="">Selecione o més</option>
+            <option>Jan</option>
+            <option>Fev</option>
+            <option>Mar</option>
+            <option>Abr</option>
+            <option>Mai</option>
+            <option>Jun</option>
+            <option>Jul</option>
+            <option>Ago</option>
+            <option>Set</option>
+            <option>Out</option>
+            <option>Nov</option>
+            <option>Dez</option>
+          </select>
         </li>
       </ul>
 

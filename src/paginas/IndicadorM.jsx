@@ -1,6 +1,6 @@
 import React from "react";
-import AreChart from "../../components/recharts/AreChart";
-import RadChar from "../../components/recharts/RadChar";
+import AreChart from "../components/recharts/AreChart";
+import RadChar from "../components/recharts/RadChar";
 const IndicadorM = () => {
   return (
     <div className="content-wrapper">

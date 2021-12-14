@@ -1,15 +1,17 @@
 import React from "react";
-import Scatte from "../../components/recharts/Scatte";
-const IndicadorT = () => {
+import LineH from "../components/recharts/LineH";
+const IndicadorA = () => {
   return (
     <div className="content-wrapper">
       <div className="content-header">
         <div className="container-fluid">
-          <h1>Indicador Mensal</h1>
+          <div>
+            <h1>Indicador Anual</h1>
+          </div>
+          <LineH />
         </div>
-        <Scatte />
       </div>
     </div>
   );
 };
-export default IndicadorT;
+export default IndicadorA;

@@ -1,16 +1,17 @@
 import { useContext, useRef, useEffect, useState } from "react";
 import axios from "axios";
-import Scatte from "./recharts/Scatte";
-import Piach from "./recharts/Piach";
-import AreChart from "./recharts/AreChart";
-import LineL from "./recharts/LineL";
-import PiaChar from "./recharts/PiaChar";
-import LineC from "./recharts/LineC";
-import LineCh from "./recharts/LineCh";
-import LineHart from "./recharts/LineHart";
+import Scatte from "../components/recharts/Scatte";
+import Piach from "../components/recharts/Piach";
+import AreChart from "../components/recharts/AreChart";
+import LineL from "../components/recharts/LineL";
+import PiaChar from "../components/recharts/PiaChar";
+import LineC from "../components/recharts/LineC";
+import LineCh from "../components/recharts/LineCh";
+import LineHart from "../components/recharts/LineHart";
 import { Line } from "recharts";
-import RChart from "./recharts/RChart";
-import LineH from "./recharts/LineH";
+import RChart from "../components/recharts/RChart";
+import LineH from "../components/recharts/LineH";
+import "../estilos/home.css";
 
 export default function Home() {
   //criar as referenças
@@ -48,7 +49,7 @@ export default function Home() {
 
   return (
     <>
-      <div className="content-wrapper">
+      <div id="body" className="content-wrapper">
         <div className="content-header">
           <div className="container-fluid">
             <div className="row">
@@ -93,7 +94,7 @@ export default function Home() {
               </div>
             </div>
             <div className="row">
-              <div className="col-sm-6 col-2">
+              <div className="col-md-6 ">
                 <div className="card">
                   <div className="card-header">
                     <h5 className="card-title">Indicador Mensal</h5>
@@ -135,7 +136,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="col-sm-6 col-2">
+              <div className="col-md-6 ">
                 <div className="card">
                   <div className="card-header">
                     <h5 className="card-title">Indicador TRIMESTRAL</h5>
@@ -177,7 +178,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="col-sm-6 col-3">
+              <div className="col-md-6">
                 <div className="card">
                   <div className="card-header">
                     <h5 className="card-title">Indicador Anual</h5>
@@ -217,7 +218,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="col-sm-6 col-3">
+              <div className="col-md-6">
                 <div className="card">
                   <div className="card-header">
                     <h5 className="card-title"> DEM</h5>
@@ -318,7 +319,7 @@ export default function Home() {
             </div>
 
             <div className="row">
-              <div className="col-sm-6 col-3">
+              <div className="col-md-6">
                 <div class="card">
                   <div className="card-header">
                     <h3 className="card-title">Usuarios Cadastrados </h3>
@@ -416,7 +417,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="col-sm-6 col-3">
+              <div className="col-md-6">
                 <div class="card">
                   <div className="card-header">
                     <h3 className="card-title">Empresas Cadastradas </h3>
