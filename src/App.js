@@ -33,7 +33,7 @@ import IndicadorA from "./paginas/IndicadorA";
 import Usuario from "./paginas/Usuario";
 import Login from "./paginas/Login";
 
-axios.defaults.baseURL = "http://localhost:8800/api";
+axios.defaults.baseURL = "https://emarpe-api.herokuapp.com/api";
 
 function App() {
   return (
