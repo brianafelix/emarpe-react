@@ -273,7 +273,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div class="card-footer">
+            <div class="card-footer" style={{ marginBottom: "15px" }}>
               <div class="row">
                 <div class="col-sm-3 col-6">
                   <div class="description-block border-right">
@@ -316,6 +316,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
+
             <div className="row">
               <div className="col-sm-6 col-3">
                 <div class="card">

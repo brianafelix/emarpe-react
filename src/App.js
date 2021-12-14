@@ -11,7 +11,7 @@ import Contabilidades from "./paginas/home/Contabilidades";
 import Parametrizacao from "./paginas/home/Parametrizacao";
 import Variaveis from "./paginas/home/Variaveis";
 import Ajudas from "./paginas/home/Ajudas";
-import Empresa from "./paginas/home/Empresa";
+import Empresas from "./paginas/home/Empresas";
 import Planos from "./paginas/home/Planos";
 import LineCh from "./components/recharts/LineCh";
 import AreChart from "./components/recharts/AreChart";
@@ -32,6 +32,7 @@ import LineHart from "./components/recharts/LineHart";
 import IndicadorA from "./paginas/home/IndicadorA";
 import Usuario from "./paginas/home/Usuario";
 import Login from "./paginas/home/Login";
+
 axios.defaults.baseURL = "http://localhost:8800/api";
 
 function App() {
@@ -42,23 +43,20 @@ function App() {
           <Nav />
           <Aside />
           <Routes>
-            <Route exact path="/home" element={<Home />} />
-            <Route exact path="/balancetes" element={<Balancetes />} />
-            <Route exact path="/Contabilidades" element={<Contabilidades />} />
-            <Route exact path="/parametrizacao" element={<Parametrizacao />} />
-            <Route exact path="/Variaveis" element={<Variaveis />} />
-            <Route exact path="/ajudas" element={<Ajudas />} />
-            <Route exact path="/empresas" element={<Empresa />} />
-            <Route exact path="/planos" element={<Planos />} />
-            <Route exact path="/indicador_Mensal" element={<IndicadorM />} />
-            <Route
-              exact
-              path="/indicador_Trimestral"
-              element={<IndicadorT />}
-            />
-            <Route exact path="/indicador_Anual" element={<IndicadorA />} />
-            <Route exact path="/usuario" element={<Usuario />} />
-            <Route exact path="/Login" element={<Login />} />
+            <Route exact path="/" element={<Home />} />
+            <Route path="/home" element={<Home />} />
+            <Route path="/balancetes" element={<Balancetes />} />
+            <Route path="/Contabilidades" element={<Contabilidades />} />
+            <Route path="/parametrizacao" element={<Parametrizacao />} />
+            <Route path="/Variaveis" element={<Variaveis />} />
+            <Route path="/ajudas" element={<Ajudas />} />
+            <Route path="/empresas" element={<Empresas />} />
+            <Route path="/planos" element={<Planos />} />
+            <Route path="/indicador_Mensal" element={<IndicadorM />} />
+            <Route path="/indicador_Trimestral" element={<IndicadorT />} />
+            <Route path="/indicador_Anual" element={<IndicadorA />} />
+            <Route path="/usuario" element={<Usuario />} />
+            <Route path="/Login" element={<Login />} />
           </Routes>
           <Footer />
         </Router>

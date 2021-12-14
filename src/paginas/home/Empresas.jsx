@@ -4,7 +4,7 @@ import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 
 import "react-toastify/dist/ReactToastify.css";
-import CardsEmpresa from "../../componentes/CardsEmpresa";
+import CardsEmpresa from "../../components/CardsEmpresa";
 
 export default function Empresas() {
   //criar as referenças
