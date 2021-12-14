@@ -10,13 +10,25 @@ export default function Nav() {
           </a>
         </li>
         <li className="nav-item d-none d-sm-inline-block">
-          <a href="index3.html" className="nav-link">
+          <a href="/" className="nav-link">
             Empresas
           </a>
         </li>
         <li className="nav-item d-none d-sm-inline-block">
           <a href="#" className="nav-link">
             Contabilidade
+          </a>
+        </li>
+
+        <li className="nav-item d-none d-sm-inline-block">
+          <a href="#" className="nav-link">
+            Mes
+          </a>
+        </li>
+
+        <li className="nav-item d-none d-sm-inline-block">
+          <a href="#" className="nav-link">
+            Ano
           </a>
         </li>
       </ul>
@@ -141,10 +153,10 @@ export default function Nav() {
             <span className="badge badge-warning navbar-badge">15</span>
           </a>
           <div className="dropdown-menu dropdown-menu-lg dropdown-menu-right">
-            <span className="dropdown-header">15 Notifications</span>
+            <span className="dropdown-header">15 Notificacoes</span>
             <div className="dropdown-divider"></div>
             <a href="#" className="dropdown-item">
-              <i className="fas fa-envelope mr-2"></i> 4 new messages
+              <i className="fas fa-envelope mr-2"></i> 4 Novas Mensagens
               <span className="float-right text-muted text-sm">3 mins</span>
             </a>
             <div className="dropdown-divider"></div>
@@ -155,11 +167,11 @@ export default function Nav() {
             <div className="dropdown-divider"></div>
             <a href="#" className="dropdown-item">
               <i className="fas fa-file mr-2"></i> 3 new reports
-              <span className="float-right text-muted text-sm">2 days</span>
+              <span className="float-right text-muted text-sm">2 dias</span>
             </a>
             <div className="dropdown-divider"></div>
             <a href="#" className="dropdown-item dropdown-footer">
-              See All Notifications
+              Notifications
             </a>
           </div>
         </li>
@@ -171,17 +183,6 @@ export default function Nav() {
             role="button"
           >
             <i className="fas fa-expand-arrows-alt"></i>
-          </a>
-        </li>
-        <li className="nav-item">
-          <a
-            className="nav-link"
-            data-widget="control-sidebar"
-            data-slide="true"
-            href="#"
-            role="button"
-          >
-            <i className="fas fa-th-large"></i>
           </a>
         </li>
       </ul>
