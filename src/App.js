@@ -34,7 +34,8 @@ import Usuario from "./paginas/Usuario";
 import Login from "./paginas/Login";
 import Dashboard from "./paginas/Dashboard";
 
-axios.defaults.baseURL = "http://localhost:8800/api";
+axios.defaults.baseURL = "https://emarpe-api.herokuapp.com/api";
+//http://localhost:8800/api"
 
 function App() {
   return (
@@ -51,7 +52,7 @@ function App() {
             <Route path="/parametrizacao" element={<Parametrizacao />} />
             <Route path="/Variaveis" element={<Variaveis />} />
             <Route path="/ajudas" element={<Ajudas />} />
-            <Route path="/empresas" element={<Empresas />} />
+            <Route exact path="/empresas" element={<Empresas />} />
             <Route path="/planos" element={<Planos />} />
             <Route path="/indicador_Mensal" element={<IndicadorM />} />
             <Route path="/indicador_Trimestral" element={<IndicadorT />} />
