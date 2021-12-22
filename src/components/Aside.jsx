@@ -36,7 +36,7 @@ export default function Aside() {
                 <a href="Home" className="nav-link active">
                   <i className="nav-icon fas fa-tachometer-alt"></i>
 
-                  <p>Dashbord</p>
+                  <p>Dashboard</p>
                 </a>
               </li>
 

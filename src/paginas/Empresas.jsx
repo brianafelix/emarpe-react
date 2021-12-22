@@ -10,7 +10,13 @@ export default function Empresas() {
   //criar as referenças
   const nome = useRef();
   const email = useRef();
+  const telefone = useRef();
+  const pais = useRef();
+  const rua = useRef();
+  const nif = useRef();
+  const cidade = useRef();
   const endereco = useRef();
+
   //------------------------------------
 
   //usestate variaveis
@@ -60,16 +66,27 @@ export default function Empresas() {
       ficheiro &&
       nome.current.value &&
       email.current.value &&
+      telefone.current.value &&
+      pais.current.value &&
+      rua.current.value &&
+      nif.current.value &&
+      cidade.current.value &&
       endereco.current.value
     ) {
       aguarde();
       const data = new FormData();
       const fileName = Date.now() + ficheiro.name;
+
       data.append("file", ficheiro);
       data.append("name", fileName);
       data.append("empresa", nome.current.value);
       data.append("email", email.current.value);
       data.append("endereco", endereco.current.value);
+      data.append("pais", pais.current.value);
+      data.append("nif", nif.current.value);
+      data.append("telefone", telefone.current.value);
+      data.append("rua", rua.current.value);
+      data.append("cidade", cidade.current.value);
       try {
         const res = await axios.post("uploadexcel/informacoes", data, {
           headers: { "Content-Type": "multipart/form-data" },
@@ -166,7 +183,6 @@ export default function Empresas() {
             </div>
             <div className="modal-body">
               <div className="row">
-                <div className="col-md-2"></div>
                 <div className="col-md-4">
                   {" "}
                   <div className="form-group">
@@ -191,10 +207,71 @@ export default function Empresas() {
                     />
                   </div>
                 </div>
-                <div className="col-md-2"></div>
-                <div className="col-md-2"></div>
 
-                <div className="col-md-8">
+                <div className="col-md-4">
+                  {" "}
+                  <div className="form-group">
+                    <label for="">Rua</label>
+                    <input
+                      className="form-control"
+                      placeholder="rua"
+                      type="text"
+                      ref={rua}
+                    />
+                  </div>
+                </div>
+                <div className="col-md-4">
+                  {" "}
+                  <div className="form-group">
+                    <label for="">Cidade</label>
+                    <input
+                      className="form-control"
+                      placeholder="cidade"
+                      type="text"
+                      ref={cidade}
+                    />
+                  </div>
+                </div>
+
+                <div className="col-md-4">
+                  {" "}
+                  <div className="form-group">
+                    <label for="">País</label>
+                    <input
+                      className="form-control"
+                      placeholder="país"
+                      type="text"
+                      ref={pais}
+                    />
+                  </div>
+                </div>
+                <div className="col-md-4">
+                  {" "}
+                  <div className="form-group">
+                    <label for="">Nif</label>
+                    <input
+                      className="form-control"
+                      placeholder="nif"
+                      type="text"
+                      ref={nif}
+                    />
+                  </div>
+                </div>
+
+                <div className="col-md-4">
+                  {" "}
+                  <div className="form-group">
+                    <label for="">Telefone</label>
+                    <input
+                      className="form-control"
+                      placeholder="Telefone"
+                      type="text"
+                      ref={telefone}
+                    />
+                  </div>
+                </div>
+
+                <div className="col-md-4">
                   <label for="">Endereço</label>
                   <textarea
                     className="form-control"

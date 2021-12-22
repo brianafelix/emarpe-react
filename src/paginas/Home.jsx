@@ -49,7 +49,7 @@ export default function Home() {
 
   return (
     <>
-      <div id="body" className="content-wrapper">
+      <div id="div" className="content-wrapper">
         <div className="content-header">
           <div className="container-fluid">
             <div className="row">

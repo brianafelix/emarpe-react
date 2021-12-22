@@ -10,6 +10,11 @@ export default function CardsEmpresa(props) {
         <p>
           {props.empresas ? props.empresas.endereco : ""} <br></br>
           {props.empresas ? props.empresas.email : ""}
+          {props.empresas ? props.empresas.nif : ""}
+          {props.empresas ? props.empresas.telefone : ""}
+          {props.empresas ? props.empresas.rua : ""}
+          {props.empresas ? props.empresas.cidade : ""}
+          {props.empresas ? props.empresas.pais : ""}
         </p>
 
         <div className="row">

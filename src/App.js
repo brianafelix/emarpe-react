@@ -32,6 +32,7 @@ import LineHart from "./components/recharts/LineHart";
 import IndicadorA from "./paginas/IndicadorA";
 import Usuario from "./paginas/Usuario";
 import Login from "./paginas/Login";
+import Dashboard from "./paginas/Dashboard";
 
 axios.defaults.baseURL = "http://localhost:8800/api";
 
@@ -57,6 +58,7 @@ function App() {
             <Route path="/indicador_Anual" element={<IndicadorA />} />
             <Route path="/usuario" element={<Usuario />} />
             <Route path="/Login" element={<Login />} />
+            <Route path="/Dashboard" element={<Dashboard />} />
           </Routes>
           <Footer />
         </Router>

@@ -1,0 +1,10 @@
+#body {
+  background: url("./imag/background.jpg");
+  background-size: contain;
+  background-position: top;
+  background: cover;
+}
+
+#div {
+  background-color: rgb(227, 252, 253);
+}
