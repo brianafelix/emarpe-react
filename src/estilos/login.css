@@ -5,6 +5,12 @@
   background: cover;
 }
 
-#div {
-  background-color: rgb(227, 252, 253);
+#button {
+  background-color: rgb(245, 239, 185);
+}
+#nav {
+  background-color: rgb(238, 153, 196);
+}
+#footer {
+  background-color: rgb(238, 153, 196);
 }

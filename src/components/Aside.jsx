@@ -1,4 +1,5 @@
 import React from "react";
+import "../estilos/home.css";
 
 export default function Aside() {
   return (
@@ -70,29 +71,6 @@ export default function Aside() {
               </li>
 
               <li className="nav-item">
-                <a href="empresas" className="nav-link">
-                  <i className="nav-icon bi bi-explicit-fill"></i>
-
-                  <p>Empresas</p>
-                </a>
-              </li>
-
-              <li className="nav-item">
-                <a href="planos" className="nav-link">
-                  <i className="nav-icon fas fa-file"></i>
-
-                  <p>Planos</p>
-                </a>
-              </li>
-
-              <li className="nav-item">
-                <a href="variaveis" className="nav-link">
-                  <i className="nav-icon fas fa-chart-pie"></i>
-                  <p>Variaveis</p>
-                </a>
-              </li>
-
-              <li className="nav-item">
                 <a href="usuario" className="nav-link">
                   <i className="nav-icon bi bi-person-lines-fill"></i>
 
@@ -100,15 +78,22 @@ export default function Aside() {
                 </a>
               </li>
 
-              <li class="nav-item menu-open">
-                <a href="#" class="nav-link active">
+              <li id="li" class="nav-item menu-open">
+                <a id="a" href="#" class="nav-link active">
                   <i class="nav-icon fas fa-tachometer-alt"></i>
                   <p>
-                    Indicadores
+                    Monitoramento
                     <i class="right fas fa-angle-left"></i>
                   </p>
                 </a>
                 <ul class="nav nav-treeview">
+                  <li className="nav-item">
+                    <a href="empresas" className="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Empresas</p>
+                    </a>
+                  </li>
+
                   <li class="nav-item">
                     <a href="indicador_Mensal" class="nav-link">
                       <i class="far fa-circle nav-icon"></i>
@@ -125,6 +110,20 @@ export default function Aside() {
                     <a href="indicador_Anual" class="nav-link ">
                       <i class="far fa-circle nav-icon"></i>
                       <p>Indicador Anual </p>
+                    </a>
+                  </li>
+                  <li className="nav-item">
+                    <a href="planos" className="nav-link">
+                      <i className="nav-icon fas fa-file"></i>
+
+                      <p>Planos de Contas</p>
+                    </a>
+                  </li>
+
+                  <li className="nav-item">
+                    <a href="variaveis" className="nav-link">
+                      <i className="nav-icon fas fa-chart-pie"></i>
+                      <p>DRE</p>
                     </a>
                   </li>
                 </ul>

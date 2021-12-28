@@ -8,12 +8,6 @@ const Dashboard = () => {
     <div id="div" className="content-wrapper">
       <div className="content-header">
         <div className="container-fluid">
-          <div className="row mb-2"></div>
-        </div>
-      </div>
-
-      <div className="content-header">
-        <div className="container-fluid">
           <div className="row">
             <div className="col-lg-6">
               <div className="card">
@@ -21,7 +15,6 @@ const Dashboard = () => {
                   <div className="d-flex justify-content-between">
                     <p className="h2">Lucratividade</p>
                   </div>
-
                   <LineH />
                 </div>
               </div>
@@ -107,7 +100,6 @@ const Dashboard = () => {
                 </div>
               </div>
             </div>
-
             <div className="col-lg-6">
               <div className="card">
                 <div className="card-header border-0">
@@ -119,38 +111,32 @@ const Dashboard = () => {
                 </div>
               </div>
             </div>
-
             <div className="col-lg-6">
               <div className="card">
                 <div className="card-header border-0">
                   <div className="d-flex justify-content-between">
                     <p class="h2">Despesas</p>
                   </div>
-
                   <LineH />
                 </div>
               </div>
             </div>
-
             <div className="col-lg-6">
               <div className="card">
                 <div className="card-header border-0">
                   <div className="d-flex justify-content-between">
                     <p class="h2">Lucro Liquido</p>
                   </div>
-
                   <LineH />
                 </div>
               </div>
             </div>
-
             <div className="col-lg-6">
               <div className="card">
                 <div className="card-header border-0">
                   <div className="d-flex justify-content-between">
                     <p class="h2">Distribuíçao dos Resultados</p>
                   </div>
-
                   <LineH />
                 </div>
               </div>

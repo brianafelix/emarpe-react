@@ -1,7 +1,7 @@
 import { useContext, useRef, useEffect, useState } from "react";
 
 import axios from "axios";
-
+import "../estilos/login.css";
 export default function Nav() {
   const [todasEmpresas, settodasEmpresas] = useState([]);
   const [loading, setloading] = useState("estado0");
@@ -19,13 +19,17 @@ export default function Nav() {
   }, [loading]);
 
   return (
-    <nav className="main-header navbar navbar-expand navbar-white navbar-light">
+    <nav
+      id="nav"
+      className="main-header navbar navbar-expand navbar-white navbar-light"
+    >
       <ul className="navbar-nav">
         <li className="nav-item">
           <a className="nav-link" data-widget="pushmenu" href="#" role="button">
             <i className="fas fa-bars"></i>
           </a>
         </li>
+
         <li
           className="nav-item d-none d-sm-inline-block"
           style={{ marginRight: "3px" }}
