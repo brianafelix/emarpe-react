@@ -116,7 +116,7 @@ export default function Aside() {
                     <a href="planos" className="nav-link">
                       <i className="nav-icon fas fa-file"></i>
 
-                      <p>Planos de Contas</p>
+                      <p>Plano de Conta</p>
                     </a>
                   </li>
 
@@ -124,6 +124,13 @@ export default function Aside() {
                     <a href="variaveis" className="nav-link">
                       <i className="nav-icon fas fa-chart-pie"></i>
                       <p>DRE</p>
+                    </a>
+                  </li>
+
+                  <li className="nav-item">
+                    <a href="variaveis" className="nav-link">
+                      <i className="nav-icon bi bi-back"></i>
+                      <p>Central de Relatorios</p>
                     </a>
                   </li>
                 </ul>

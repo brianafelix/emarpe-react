@@ -1,15 +1,9 @@
 import { useContext, useRef, useEffect, useState } from "react";
 import axios from "axios";
 import Scatte from "../components/recharts/Scatte";
-import Piach from "../components/recharts/Piach";
+
 import AreChart from "../components/recharts/AreChart";
-import LineL from "../components/recharts/LineL";
-import PiaChar from "../components/recharts/PiaChar";
-import LineC from "../components/recharts/LineC";
-import LineCh from "../components/recharts/LineCh";
-import LineHart from "../components/recharts/LineHart";
-import { Line } from "recharts";
-import RChart from "../components/recharts/RChart";
+
 import LineH from "../components/recharts/LineH";
 import "../estilos/home.css";
 
@@ -219,7 +213,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="col-md-6">
-                <div className="card">
+                <div className="car-d">
                   <div className="card-header">
                     <h5 className="card-title"> DEM</h5>
 

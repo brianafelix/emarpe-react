@@ -13,22 +13,10 @@ import Variaveis from "./paginas/Variaveis";
 import Ajudas from "./paginas/Ajudas";
 import Empresas from "./paginas/Empresas";
 import Planos from "./paginas/Planos";
-import LineCh from "./components/recharts/LineCh";
-import AreChart from "./components/recharts/AreChart";
-import RadChar from "./components/recharts/RadChar";
-import RChart from "./components/recharts/RChart";
-import LineC from "./components/recharts/LineC";
-import LineChar from "./components/recharts/LineChar";
 
-import LineH from "./components/recharts/LineH";
 import IndicadorM from "./paginas/IndicadorM";
 import IndicadorT from "./paginas/IndicadorT";
-import Piach from "./components/recharts/Piach";
-import PiaChar from "./components/recharts/PiaChar";
-import GraficoP from "./components/recharts/GraficoP";
-import LineL from "./components/recharts/LineL";
-import Scatte from "./components/recharts/Scatte";
-import LineHart from "./components/recharts/LineHart";
+
 import IndicadorA from "./paginas/IndicadorA";
 import Usuario from "./paginas/Usuario";
 import Login from "./paginas/Login";

@@ -1,4 +1,6 @@
 import React from "react";
+import "../../estilos/recharts.css";
+
 import {
   ResponsiveContainer,
   Line,
@@ -63,7 +65,7 @@ const LineH = () => {
     <div>
       <h1 className="chart-heading"></h1>
 
-      <ResponsiveContainer width="100%" aspect={3}>
+      <ResponsiveContainer id="LineH" width="100%" aspect={3}>
         <ComposedChart
           width={500}
           height={400}

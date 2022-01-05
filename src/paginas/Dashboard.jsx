@@ -167,6 +167,48 @@ const Dashboard = () => {
             </div>
           </div>
         </div>
+        <div className="row">
+          <div className="col-md-4">
+            <div className="info-box">
+              <span className="info-box-icon bg-info elevation-1">
+                <i className="bi bi-bank2"></i>
+              </span>
+
+              <div className="info-box-content">
+                <span className="info-box-text">Empresas</span>
+
+                <span className="info-box-number">45</span>
+              </div>
+            </div>
+          </div>
+
+          <div className="col-md-4">
+            <div className="info-box mb-4">
+              <span className="info-box-icon bg-warning elevation-1">
+                <i className="fas fa-users"></i>
+              </span>
+              <div className="info-box-content">
+                <span className="info-box-text">Clientes</span>
+                <span className="info-box-number">2,000</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            className="
+               col-md-4"
+          >
+            <div className="info-box mb-2">
+              <span className="info-box-icon bg-warning elevation-1">
+                <i className="bi bi-person-fill"></i>
+              </span>
+              <div className="info-box-content">
+                <span className="info-box-text">Funcionarios</span>
+                <span className="info-box-number">2,000</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

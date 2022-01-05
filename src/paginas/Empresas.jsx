@@ -117,6 +117,22 @@ export default function Empresas() {
       <div className="content-wrapper">
         <div className="content-header">
           <div className="container-fluid">
+            <div className="row">
+              <div className="col-md-4">
+                <div className="info-box">
+                  <span className="info-box-icon bg-info elevation-1">
+                    <i className="bi bi-bank2"></i>
+                  </span>
+
+                  <div className="info-box-content">
+                    <span className="info-box-text">Empresas</span>
+
+                    <span className="info-box-number">45</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <div className="row mb-2">
               <div className="col-sm-6">
                 <h1>Empersas</h1>
